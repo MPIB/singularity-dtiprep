@@ -41,6 +41,8 @@ cmake  $DTIPREP_CLONE_DIRECTORY
 make BRAINSTools
 make DTIProcess
 
+echo "export PATH=${DTIPREP_BUILD_DIRECTORY}/bin:$PATH" >> $SINGULARITY_ENVIRONMENT
+
 
 # Removing installation overhead.
  
